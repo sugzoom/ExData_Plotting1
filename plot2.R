@@ -6,5 +6,5 @@ dt1$DateTime <- strptime(paste(dt1$Date, dt1$Time, sep=" "), format="%d/%m/%Y %H
 
 
 png(filename="plot2.png",width=480,height=480)
-with(dt1,plot(x=DateTime,y=Global_active_power,type="l",ylab="Global Active Power (kilowatts)"))
+with(dt1,plot(x=DateTime,y=Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=""))
 dev.off()
